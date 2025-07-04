@@ -1,0 +1,8 @@
+services:
+  app:
+    image: kolsolv/test:latest
+    container_name: app
+    ports:
+      - "3000:3000"
+    volumes:
+      - /var/run/tappd.sock:/var/run/tappd.sock
